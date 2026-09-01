@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RingCentralWebDemo", "RingCentralWebDemo\RingCentralWebDemo.csproj", "{7F5A5223-7CE9-4A9C-9A45-E2EEE8EFFF24}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RingCentralConsoleDemo", "RingCentralConsoleDemo\RingCentralConsoleDemo.csproj", "{6B3AFA4C-83EC-4597-B438-A07D68AF8AF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RingCentralWebDemo", "RingCentralWebDemo\RingCentralWebDemo.csproj", "{875BCD24-2611-4162-8A8F-56C4FFD39FBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +10,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7F5A5223-7CE9-4A9C-9A45-E2EEE8EFFF24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7F5A5223-7CE9-4A9C-9A45-E2EEE8EFFF24}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7F5A5223-7CE9-4A9C-9A45-E2EEE8EFFF24}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7F5A5223-7CE9-4A9C-9A45-E2EEE8EFFF24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B3AFA4C-83EC-4597-B438-A07D68AF8AF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B3AFA4C-83EC-4597-B438-A07D68AF8AF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B3AFA4C-83EC-4597-B438-A07D68AF8AF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B3AFA4C-83EC-4597-B438-A07D68AF8AF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{875BCD24-2611-4162-8A8F-56C4FFD39FBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{875BCD24-2611-4162-8A8F-56C4FFD39FBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{875BCD24-2611-4162-8A8F-56C4FFD39FBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{875BCD24-2611-4162-8A8F-56C4FFD39FBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
