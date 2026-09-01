@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RingCentralConsoleDemo", "R
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RingCentralWebDemo", "RingCentralWebDemo\RingCentralWebDemo.csproj", "{875BCD24-2611-4162-8A8F-56C4FFD39FBB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RingCentralAPIDemo", "RingCentralAPIDemo\RingCentralAPIDemo.csproj", "{93318BB0-B3CE-4FE3-8AF9-89763CBB945B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{875BCD24-2611-4162-8A8F-56C4FFD39FBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{875BCD24-2611-4162-8A8F-56C4FFD39FBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{875BCD24-2611-4162-8A8F-56C4FFD39FBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93318BB0-B3CE-4FE3-8AF9-89763CBB945B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93318BB0-B3CE-4FE3-8AF9-89763CBB945B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93318BB0-B3CE-4FE3-8AF9-89763CBB945B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93318BB0-B3CE-4FE3-8AF9-89763CBB945B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
