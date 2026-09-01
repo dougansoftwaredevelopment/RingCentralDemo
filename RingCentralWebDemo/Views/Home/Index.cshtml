@@ -1,8 +1,187 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    //WIDGET EXAMPLE
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">This part of the app contains the ring central widget based approach</a>.</p>
 </div>
+<script>
+  (function() {
+    var rcs = document.createElement("script");
+    rcs.src = "https://apps.ringcentral.com/integration/ringcentral-embeddable/latest/adapter.js?enableSideWidget=1";
+    var rcs0 = document.getElementsByTagName("script")[0];
+    rcs0.parentNode.insertBefore(rcs, rcs0);
+  })();
+  document.querySelector("#rc-widget-adapter-frame").contentWindow.postMessage({
+      type: 'rc-adapter-register-widget-app',
+      app: {
+          id: 'support-cases',
+          name: 'Support cases',
+          iconUri: 'https://example.com/icon.png',
+          pagePath: '/sidebarApps/support-cases',
+          inputChangedPath: '/sidebarApps/support-cases/inputChanged',
+          buttonEventPath: '/sidebarApps/support-cases/button-click',
+      },
+  }, '*')
+  function responseMessage(request, response) {
+      document.querySelector("#rc-widget-adapter-frame").contentWindow.postMessage({
+          type: 'rc-post-message-response',
+          responseId: request.requestId,
+          response,
+      }, '*');
+  }
+
+  function getCasesPageJSON(cases) {
+      return {
+          page: {
+              type: 'json-schema',
+              schema: {
+                  type: 'object',
+                  required: [],
+                  properties: {
+                      "title": {
+                          "type": "string",
+                          "description": "All open cases",
+                      },
+                      "description": {
+                          "type": "string",
+                          "description": "1 item, Updated at 06/13/2025",
+                      },
+                      "caseSearch": {
+                          "type": "string",
+                          "description": "Search cases",
+                      },
+                      "caseList": {
+                          "type": "string",
+                          "oneOf": cases.map((item) => ({
+                              const: item.link,
+                              title: item.CaseNumber,
+                              description: item.Subject,
+                              authorName: item.Contact ? item.Contact.Name : null,
+                              meta: item.Status,
+                          })),
+                      },
+                      "accountId": {
+                          "type": "string",
+                          "description": "Account ID",
+                      },
+                  },
+              },
+              uiSchema: {
+                  title: {
+                      "ui:field": "typography",
+                      "ui:variant": "body2",
+                  },
+                  description: {
+                      "ui:field": "typography",
+                      "ui:variant": "caption1",
+                      "ui:style": { marginTop: '-20px' },
+                  },
+                  caseSearch: {
+                      "ui:field": "search",
+                      "ui:placeholder": 'Search this list',
+                      "ui:label": false,
+                      "ui:style": { marginTop: '-10px' },
+                  },
+                  caseList: {
+                      "ui:field": "list",
+                      "ui:showSelected": false,
+                      "ui:label": false,
+                  },
+                  accountId: {
+                      "ui:widget": "hidden",
+                  },
+              },
+              formData: {
+                  caseSearch: '',
+                  accountId: 'hidden_account_id',
+              },
+          },
+          actions: [{
+              id: 'home',
+              label: 'Home',
+          }, {
+              id: 'unauthorize',
+              label: 'Unauthorize CRM',
+              color: 'danger.b04',
+          }],
+      };
+  }
+
+  window.addEventListener('message', function (e) {
+      var data = e.data;
+      if (data && data.type === 'rc-post-message-request') {
+          if (data.path === '/sidebarApps/support-cases') {
+              const contact = data.body.contact; // get contact { phoneNumber } from call
+              // TODO: get cases from your CRM with contact info
+              const cases = [{
+                  link: 'https://case_link',
+                  CaseNumber: '666666',
+                  Subject: 'Customer want to buy a car',
+                  Contact: {
+                      name: 'Customer Name',
+                  },
+                  Status: 'New',
+              }];
+              responseMessage(data, {
+                  data: getCasesPageJSON(cases),
+              });
+          }
+      }
+  });
+
+  // We use debounce to avoid sending too many requests to your CRM
+  let supportCasesSearchDebounce = null;
+
+  function debounceSupportCasesSearch(request) {
+      if (!supportCasesSearchDebounce) {
+          supportCasesSearchDebounce = {};
+      } else {
+          const timeout = supportCasesSearchDebounce.timeout;
+          clearTimeout(timeout);
+          const preRequest = supportCasesSearchDebounce.request;
+          if (preRequest) {
+              // respond 'ok' to avoid re-render the page
+              responseMessage(preRequest, {
+                  data: 'ok',
+              });
+          }
+      }
+      supportCasesSearchDebounce.request = request;
+      supportCasesSearchDebounce.timeout = setTimeout(async () => {
+          supportCasesSearchDebounce = null;
+          const contact = request.body.contact;
+          const search = request.body.formData.caseSearch;
+          const accountId = request.body.formData.accountId;
+          // TODO: get cases from your CRM
+          const cases = [{
+              link: 'https://case_link',
+              CaseNumber: '666666',
+              Subject: 'Customer want to buy a car',
+              Contact: {
+                  name: 'Customer Name',
+              },
+              Status: 'New',
+          }];
+          responseMessage(request, {
+              data: getCasesPageJSON(cases),
+          });
+      }, 800);
+  }
+
+  window.addEventListener('message', function (e) {
+      var data = e.data;
+      if (data && data.type === 'rc-post-message-request') {
+          if (data.path === '/sidebarApps/support-cases') {
+              // Handle main page request
+          }
+          if (data.path === '/sidebarApps/support-cases/inputChanged') {
+              if (data.body.changedKeys[0] === 'caseSearch') {
+                  debounceSupportCasesSearch(data);
+              }
+          }
+      }
+  });
+</script>
