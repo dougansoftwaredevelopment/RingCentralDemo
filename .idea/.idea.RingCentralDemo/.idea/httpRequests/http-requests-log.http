@@ -1,0 +1,36 @@
+POST http://localhost:5246/api/ringout
+Content-Type: application/json
+Accept: application/json
+User-Agent: RingCentralAPIDemoClient/1.0
+
+{
+  "from": {
+    "phoneNumber": "+19099410216"
+  },
+  "to": {
+    "phoneNumber": "++16476544841"
+  },
+  "playPrompt": false
+}
+
+<> 2026-09-02T122251.200.json
+
+###
+POST http://localhost:5246/api/ringout
+Content-Type: application/json
+Accept: application/json
+User-Agent: RingCentralAPIDemoClient/1.0
+
+{
+  "from": {
+    "phoneNumber": "+19099410216"
+  },
+  "to": {
+    "phoneNumber": "++16476544841"
+  },
+  "playPrompt": false
+}
+
+<> 2026-09-02T122229.200.json
+
+###

@@ -1,0 +1,9 @@
+{
+  "id": "s-a0d7c5203ccc5z1a062ee2c8ez143a8c10000",
+  "uri": "https://platform.ringcentral.com/restapi/v1.0/account/2766594027/extension/2766594027/ring-out/s-a0d7c5203ccc5z1a062ee2c8ez143a8c10000",
+  "status": {
+    "callStatus": "InProgress",
+    "callerStatus": "InProgress",
+    "calleeStatus": "InProgress"
+  }
+}

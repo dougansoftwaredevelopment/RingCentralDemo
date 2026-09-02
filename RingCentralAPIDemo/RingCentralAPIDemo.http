@@ -1,6 +1,71 @@
 @RingCentralAPIDemo_HostAddress = http://localhost:5246
 
-GET {{RingCentralAPIDemo_HostAddress}}/weatherforecast/
+### List Personal Contacts
+GET {{RingCentralAPIDemo_HostAddress}}/api/contacts?page=1&perPage=10
 Accept: application/json
+User-Agent: RingCentralAPIDemoClient/1.0
 
-###
+### Get Single Contact
+GET {{RingCentralAPIDemo_HostAddress}}/api/contacts/12345678
+Accept: application/json
+User-Agent: RingCentralAPIDemoClient/1.0
+
+### Create Personal Contact
+POST {{RingCentralAPIDemo_HostAddress}}/api/contacts
+Content-Type: application/json
+Accept: application/json
+User-Agent: RingCentralAPIDemoClient/1.0
+
+{
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "company": "Example Corp",
+  "email": "jane.doe@example.com",
+  "businessPhone": "+16505550100"
+}
+
+### Update Personal Contact
+PUT {{RingCentralAPIDemo_HostAddress}}/api/contacts/12345678
+Content-Type: application/json
+Accept: application/json
+User-Agent: RingCentralAPIDemoClient/1.0
+
+{
+  "firstName": "Jane",
+  "lastName": "Smith",
+  "company": "Acme Inc"
+}
+
+### Delete Personal Contact
+DELETE {{RingCentralAPIDemo_HostAddress}}/api/contacts/12345678
+User-Agent: RingCentralAPIDemoClient/1.0
+
+### Get Current Extension Info
+GET {{RingCentralAPIDemo_HostAddress}}/api/extension
+Accept: application/json
+User-Agent: RingCentralAPIDemoClient/1.0
+
+### Initiate RingOut Call
+POST {{RingCentralAPIDemo_HostAddress}}/api/ringout
+Content-Type: application/json
+Accept: application/json
+User-Agent: RingCentralAPIDemoClient/1.0
+
+{
+  "from": {
+    "phoneNumber": "+19099410216"
+  },
+  "to": {
+    "phoneNumber": "++16476544841"
+  },
+  "playPrompt": false
+}
+
+### Get RingOut Call Status
+GET {{RingCentralAPIDemo_HostAddress}}/api/ringout/12345678
+Accept: application/json
+User-Agent: RingCentralAPIDemoClient/1.0
+
+### Cancel / Hang Up RingOut Call
+DELETE {{RingCentralAPIDemo_HostAddress}}/api/ringout/12345678
+User-Agent: RingCentralAPIDemoClient/1.0

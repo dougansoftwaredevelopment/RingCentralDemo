@@ -18,10 +18,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c853c7e7-32ef-4f0a-8355-bcedc8918e4f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/RingCentralAPIDemo/rc-platform.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RingCentralDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RingCentralDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RingCentralConsoleDemo/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RingCentralConsoleDemo/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RingCentralConsoleDemo/RingCentralConsoleDemo.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RingCentralConsoleDemo/RingCentralConsoleDemo.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RingCentralDemo.sln" beforeDir="false" afterPath="$PROJECT_DIR$/RingCentralDemo.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RingCentralAPIDemo/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RingCentralAPIDemo/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RingCentralAPIDemo/RingCentralAPIDemo.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RingCentralAPIDemo/RingCentralAPIDemo.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RingCentralAPIDemo/RingCentralAPIDemo.http" beforeDir="false" afterPath="$PROJECT_DIR$/RingCentralAPIDemo/RingCentralAPIDemo.http" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,61 +54,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="8.19067734123036E-17" />
-      <entry key="MS500" value="0.002344227922695087" />
-      <entry key="S2" value="1.1133881770173353" />
-      <entry key="S5" value="4.309368326556131" />
-      <entry key="S10" value="9.420304514196472" />
-      <entry key="S30" value="26.049880249275528" />
-      <entry key="S60" value="36.845674934793216" />
-      <entry key="M2" value="44.41715839257219" />
-      <entry key="M5" value="49.89172690938206" />
-      <entry key="M10" value="51.91081025363709" />
-      <entry key="M15" value="52.92307781624783" />
-      <entry key="M30" value="62.23344703260672" />
-      <entry key="H1" value="102.32464622216403" />
-      <entry key="H2" value="169.2618764905597" />
-      <entry key="H4" value="232.46216946025905" />
-      <entry key="D1" value="311.3810392278248" />
-      <entry key="W1" value="328.1069954759316" />
+      <entry key="MS100" value="1.9095920933675095" />
+      <entry key="MS500" value="7.503842985850813" />
+      <entry key="S2" value="20.015871128000313" />
+      <entry key="S5" value="27.085856990914262" />
+      <entry key="S10" value="30.266508664977206" />
+      <entry key="S30" value="32.83735706641225" />
+      <entry key="S60" value="37.20989056021302" />
+      <entry key="M2" value="54.76961886682933" />
+      <entry key="M5" value="96.58538722399072" />
+      <entry key="M10" value="143.46488736227306" />
+      <entry key="M15" value="184.66675435411238" />
+      <entry key="M30" value="281.65555523772707" />
+      <entry key="H1" value="403.0385201296788" />
+      <entry key="H2" value="518.5596082913515" />
+      <entry key="H4" value="623.7556421520068" />
+      <entry key="D1" value="1162.945145868277" />
+      <entry key="W1" value="1516.7665999998276" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0" />
-      <entry key="M2" value="1.0" />
-      <entry key="M5" value="1.0" />
-      <entry key="M10" value="1.0" />
-      <entry key="M15" value="1.0" />
-      <entry key="M30" value="1.0" />
-      <entry key="H1" value="1.0" />
-      <entry key="H2" value="1.0" />
-      <entry key="H4" value="1.0" />
-      <entry key="D1" value="1.0" />
-      <entry key="W1" value="1.0" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="2.0540651126631922E-147" />
+      <entry key="S10" value="6.3949120017925436E-74" />
+      <entry key="S30" value="6.344711354343045E-25" />
+      <entry key="S60" value="1.1284545067690448E-12" />
+      <entry key="M2" value="1.5914696886338753E-6" />
+      <entry key="M5" value="0.010597275408929083" />
+      <entry key="M10" value="0.2379284185875112" />
+      <entry key="M15" value="0.698085229710386" />
+      <entry key="M30" value="2.2469414035897284" />
+      <entry key="H1" value="4.5439275364958425" />
+      <entry key="H2" value="6.885719582274836" />
+      <entry key="H4" value="8.916544044245311" />
+      <entry key="D1" value="15.599044576604905" />
+      <entry key="W1" value="19.22006101776691" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.33383124397508E-14" />
-      <entry key="MS500" value="0.004004709086678733" />
-      <entry key="S2" value="1.3136683123199302" />
-      <entry key="S5" value="4.8279241974631795" />
-      <entry key="S10" value="10.126934207385261" />
-      <entry key="S30" value="26.92833589985957" />
-      <entry key="S60" value="37.77993246437771" />
-      <entry key="M2" value="45.38278064578607" />
-      <entry key="M5" value="50.87757252079718" />
-      <entry key="M10" value="52.9036615652675" />
-      <entry key="M15" value="53.91828764610253" />
-      <entry key="M30" value="63.23089854714371" />
-      <entry key="H1" value="103.32298363145219" />
-      <entry key="H2" value="170.26069622854297" />
-      <entry key="H4" value="233.46140857226794" />
-      <entry key="D1" value="312.38087608450735" />
-      <entry key="W1" value="329.106971057779" />
+      <entry key="MS100" value="1.8440293240567116" />
+      <entry key="MS500" value="7.446603082166678" />
+      <entry key="S2" value="19.97546749288056" />
+      <entry key="S5" value="27.063605515768945" />
+      <entry key="S10" value="30.253999995576226" />
+      <entry key="S30" value="32.83281518622653" />
+      <entry key="S60" value="37.20732495106126" />
+      <entry key="M2" value="54.767757659711386" />
+      <entry key="M5" value="96.59458573649854" />
+      <entry key="M10" value="143.70097020197423" />
+      <entry key="M15" value="185.36244259814546" />
+      <entry key="M30" value="283.8995613160147" />
+      <entry key="H1" value="407.57974554547195" />
+      <entry key="H2" value="525.4433337955088" />
+      <entry key="H4" value="632.6706930386914" />
+      <entry key="D1" value="1178.5431635506716" />
+      <entry key="W1" value="1535.9864416766504" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
@@ -120,8 +122,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    ".NET Launch Settings Profile.RingCentralAPIDemo: http.executor": "Debug",
     ".NET Project.RingCentralConsoleDemo.executor": "Debug",
     ".NET Project.RingCentralWebDemo.executor": "Debug",
+    "HTTP Request.RingCentralAPIDemo | Initiate RingOut Call.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -144,7 +148,20 @@
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Project.RingCentralConsoleDemo">
+  <component name="RunDashboard">
+    <option name="configurationStatuses">
+      <map>
+        <entry key="HttpClient.HttpRequestRunConfigurationType">
+          <value>
+            <map>
+              <entry key="RingCentralAPIDemo | Initiate RingOut Call" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.RingCentralAPIDemo: http">
     <configuration name="RingCentralConsoleDemo" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -186,6 +203,9 @@
       <method v="2">
         <option name="Build" />
       </method>
+    </configuration>
+    <configuration name="RingCentralAPIDemo | Initiate RingOut Call" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/RingCentralAPIDemo/RingCentralAPIDemo.http" executionIdentifier="Initiate RingOut Call" index="7" runType="Run single request">
+      <method v="2" />
     </configuration>
     <configuration name="RingCentralAPIDemo: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/RingCentralAPIDemo/RingCentralAPIDemo.csproj" />
@@ -251,6 +271,11 @@
         <option name="Build" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.RingCentralAPIDemo | Initiate RingOut Call" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -284,6 +309,45 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/RingCentralAPIDemo/Program.cs</url>
+          <line>15</line>
+          <properties documentPath="C:\Users\svoog\RiderProjects\RingCentralDemo\RingCentralAPIDemo\Program.cs" containingFunctionPresentation="">
+            <startOffsets>
+              <option value="449" />
+            </startOffsets>
+            <endOffsets>
+              <option value="731" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/RingCentralAPIDemo/Program.cs</url>
+          <line>23</line>
+          <properties documentPath="C:\Users\svoog\RiderProjects\RingCentralDemo\RingCentralAPIDemo\Program.cs" containingFunctionPresentation="">
+            <startOffsets>
+              <option value="792" />
+            </startOffsets>
+            <endOffsets>
+              <option value="862" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/RingCentralAPIDemo/Program.cs</url>
+          <line>26</line>
+          <properties documentPath="C:\Users\svoog\RiderProjects\RingCentralDemo\RingCentralAPIDemo\Program.cs" containingFunctionPresentation="">
+            <startOffsets>
+              <option value="961" />
+            </startOffsets>
+            <endOffsets>
+              <option value="997" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
